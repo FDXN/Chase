@@ -17,7 +17,7 @@ class Creature(pygame.sprite.Sprite):
         self.wander_radius = 10  # 徘徊半径
         self.target = self.position
         self.current_time = pygame.time.get_ticks()
-        self.change_target_interval = self.get_random_interval()  # 时间间隔（毫秒）：3秒
+        self.change_target_interval = self.get_random_interval()  # 时间间隔（毫秒）
         self.last_target_change = 0
         self.actual_speed = Vector2(0, 0)
         self.first_update = True
